@@ -13,6 +13,7 @@
 		E7F8FD711B0417BF002B7001 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E7F8FD701B0417BF002B7001 /* Images.xcassets */; };
 		E7F8FD741B0417BF002B7001 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7F8FD721B0417BF002B7001 /* LaunchScreen.xib */; };
 		E7F8FD801B0417BF002B7001 /* codepath_carouselTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8FD7F1B0417BF002B7001 /* codepath_carouselTests.swift */; };
+		E7F8FD8A1B0419DE002B7001 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8FD891B0419DE002B7001 /* Common.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +37,7 @@
 		E7F8FD791B0417BF002B7001 /* codepath-carouselTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "codepath-carouselTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E7F8FD7E1B0417BF002B7001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E7F8FD7F1B0417BF002B7001 /* codepath_carouselTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = codepath_carouselTests.swift; sourceTree = "<group>"; };
+		E7F8FD891B0419DE002B7001 /* Common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +79,7 @@
 		E7F8FD661B0417BF002B7001 /* codepath-carousel */ = {
 			isa = PBXGroup;
 			children = (
+				E7F8FD891B0419DE002B7001 /* Common.swift */,
 				E7F8FD691B0417BF002B7001 /* AppDelegate.swift */,
 				E7F8FD6B1B0417BF002B7001 /* ViewController.swift */,
 				E7F8FD6D1B0417BF002B7001 /* Main.storyboard */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E7F8FD6C1B0417BF002B7001 /* ViewController.swift in Sources */,
+				E7F8FD8A1B0419DE002B7001 /* Common.swift in Sources */,
 				E7F8FD6A1B0417BF002B7001 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "codepath-carousel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -348,6 +353,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = "codepath-carousel/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
