@@ -27,7 +27,7 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                         <connections>
-                                            <segue destination="NOr-gl-KIE" kind="push" id="NUC-Ox-4AV"/>
+                                            <segue destination="NOr-gl-KIE" kind="push" id="G3P-DM-OZi"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="kch-ck-8Tg">
@@ -120,6 +120,7 @@
                                         </state>
                                         <connections>
                                             <action selector="didPressSignIn:" destination="NOr-gl-KIE" eventType="touchUpInside" id="Hci-EP-baN"/>
+                                            <segue destination="AKi-b0-TId" kind="modal" modalTransitionStyle="crossDissolve" id="ayM-CX-sVb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -152,7 +153,47 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D55-zS-bsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1301" y="343"/>
+            <point key="canvasLocation" x="1297" y="343"/>
+        </scene>
+        <!--Welcome View Controller-->
+        <scene sceneID="3lX-9w-f3c">
+            <objects>
+                <viewController id="AKi-b0-TId" customClass="WelcomeViewController" customModule="codepath_carousel" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="aS4-qm-DID">
+                        <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="kyZ-7k-aq7">
+                                <rect key="frame" x="0.0" y="0.0" width="1280" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome1" id="sZe-ve-eAa">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome3" id="mCT-ji-uBb">
+                                        <rect key="frame" x="640" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome2" id="pwp-2a-7Ac">
+                                        <rect key="frame" x="320" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="welcome4" id="avF-NE-ZZh">
+                                        <rect key="frame" x="960" y="0.0" width="320" height="568"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="1280" height="568"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rfe-ZM-ReP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1297" y="1397"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="h9C-P2-yO3">
@@ -179,6 +220,10 @@
         <image name="one_field_form" width="320" height="55"/>
         <image name="sign_in_buttons" width="320" height="104"/>
         <image name="sign_in_nav_bar" width="320" height="66"/>
+        <image name="welcome1" width="320" height="568"/>
+        <image name="welcome2" width="320" height="568"/>
+        <image name="welcome3" width="320" height="568"/>
+        <image name="welcome4" width="320" height="568"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>

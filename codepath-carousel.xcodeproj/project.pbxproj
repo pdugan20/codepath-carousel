@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E798E4C21B06BE9100DE575E /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E798E4C11B06BE9100DE575E /* WelcomeViewController.swift */; };
 		E7BFA7221B0420A300B905F6 /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFA7211B0420A300B905F6 /* IntroViewController.swift */; };
 		E7BFA7251B04230500B905F6 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BFA7241B04230500B905F6 /* SignInViewController.swift */; };
 		E7F8FD6A1B0417BF002B7001 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7F8FD691B0417BF002B7001 /* AppDelegate.swift */; };
@@ -29,6 +30,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E798E4C11B06BE9100DE575E /* WelcomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 		E7BFA7211B0420A300B905F6 /* IntroViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
 		E7BFA7241B04230500B905F6 /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		E7F8FD641B0417BF002B7001 /* codepath-carousel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "codepath-carousel.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -67,6 +69,7 @@
 			children = (
 				E7BFA7241B04230500B905F6 /* SignInViewController.swift */,
 				E7BFA7211B0420A300B905F6 /* IntroViewController.swift */,
+				E798E4C11B06BE9100DE575E /* WelcomeViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -232,6 +235,7 @@
 				E7F8FD6C1B0417BF002B7001 /* ViewController.swift in Sources */,
 				E7F8FD8A1B0419DE002B7001 /* Common.swift in Sources */,
 				E7F8FD6A1B0417BF002B7001 /* AppDelegate.swift in Sources */,
+				E798E4C21B06BE9100DE575E /* WelcomeViewController.swift in Sources */,
 				E7BFA7251B04230500B905F6 /* SignInViewController.swift in Sources */,
 				E7BFA7221B0420A300B905F6 /* IntroViewController.swift in Sources */,
 			);
