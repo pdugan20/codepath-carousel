@@ -91,7 +91,9 @@ class SignInViewController: UIViewController {
             loadingAlert.show()
             delay(2) {
                 loadingAlert.dismissWithClickedButtonIndex(0, animated: true)
-                signInAlert.show()
+                delay(0.5) {
+                    signInAlert.show()
+                }
             }
         } else {
             loadingAlert.show()
