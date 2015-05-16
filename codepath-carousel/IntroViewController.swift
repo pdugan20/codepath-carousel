@@ -25,11 +25,6 @@ class IntroViewController: UIViewController, UIScrollViewDelegate, UIActionSheet
     var scales : [Float] = [1, 1.65, 1.7, 1.6, 1.65, 1.65]
     var rotations : [Float] = [-10, -10, 10, 10, 10, -10]
     
-    func convertValue(value: Float, r1Min: Float, r1Max: Float, r2Min: Float, r2Max: Float) -> Float {
-        var ratio = (r2Max - r2Min) / (r1Max - r1Min)
-        return value * ratio + r2Min - r1Min * ratio
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,35 +48,35 @@ class IntroViewController: UIViewController, UIScrollViewDelegate, UIActionSheet
     func transformTiles() {
         var offset = Float(scrollView.contentOffset.y)
         
-        var tx1 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -30, r2Max: 0)
-        var ty1 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -285, r2Max: 0)
-        var scale1 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 1, r2Max: 1)
-        var rotation1 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -10, r2Max: 0)
+        var tx1 = convertValue(offset, 0, 568, -30, 0)
+        var ty1 = convertValue(offset, 0, 568, -285, 0)
+        var scale1 = convertValue(offset, 0, 568, 1, 1)
+        var rotation1 = convertValue(offset, 0, 568, -10, 0)
         
-        var tx2 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 75, r2Max: 0)
-        var ty2 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -240, r2Max: 0)
-        var scale2 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 1.65, r2Max: 1)
-        var rotation2 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -10, r2Max: 0)
+        var tx2 = convertValue(offset, 0, 568, 75, 0)
+        var ty2 = convertValue(offset, 0, 568, -240, 0)
+        var scale2 = convertValue(offset, 0, 568, 1.65, 1)
+        var rotation2 = convertValue(offset, 0, 568, -10, 0)
         
-        var tx3 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -66, r2Max: 0)
-        var ty3 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -415, r2Max: 0)
-        var scale3 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 1.7, r2Max: 1)
-        var rotation3 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 10, r2Max: 0)
+        var tx3 = convertValue(offset, 0, 568, -66, 0)
+        var ty3 = convertValue(offset, 0, 568, -415, 0)
+        var scale3 = convertValue(offset, 0, 568, 1.7, 1)
+        var rotation3 = convertValue(offset, 0, 568, 10, 0)
         
-        var tx4 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 10, r2Max: 0)
-        var ty4 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -408, r2Max: 0)
-        var scale4 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 1.6, r2Max: 1)
-        var rotation4 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 10, r2Max: 0)
+        var tx4 = convertValue(offset, 0, 568, 10, 0)
+        var ty4 = convertValue(offset, 0, 568, -408, 0)
+        var scale4 = convertValue(offset, 0, 568, 1.6, 1)
+        var rotation4 = convertValue(offset, 0, 568, 10, 0)
         
-        var tx5 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -200, r2Max: 0)
-        var ty5 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -480, r2Max: 0)
-        var scale5 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 1.65, r2Max: 1)
-        var rotation5 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 10, r2Max: 0)
+        var tx5 = convertValue(offset, 0, 568, -200, 0)
+        var ty5 = convertValue(offset, 0, 568, -480, 0)
+        var scale5 = convertValue(offset, 0, 568, 1.65, 1)
+        var rotation5 = convertValue(offset, 0, 568, 10, 0)
         
-        var tx6 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -15, r2Max: 0)
-        var ty6 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -500, r2Max: 0)
-        var scale6 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: 1.65, r2Max: 1)
-        var rotation6 = convertValue(offset, r1Min: 0, r1Max: 568, r2Min: -10, r2Max: 0)
+        var tx6 = convertValue(offset, 0, 568, -15, 0)
+        var ty6 = convertValue(offset, 0, 568, -500, 0)
+        var scale6 = convertValue(offset, 0, 568, 1.65, 1)
+        var rotation6 = convertValue(offset, 0, 568, -10, 0)
         
         introTileImage1.transform = CGAffineTransformMakeRotation(CGFloat(Double(rotation1) * M_PI / 180))
         introTileImage1.transform = CGAffineTransformTranslate(introTileImage1.transform, CGFloat(tx1), CGFloat(ty1))
