@@ -160,17 +160,27 @@
             <objects>
                 <viewController id="gCJ-u8-CmQ" customClass="SettingsViewController" customModule="codepath_carousel" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yyU-Cz-nfu">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="759"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="SF8-4P-Z66">
-                                <rect key="frame" x="0.0" y="56" width="320" height="512"/>
+                                <rect key="frame" x="0.0" y="56" width="320" height="703"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings" id="u0z-P5-Uj5">
                                         <rect key="frame" x="0.0" y="8" width="320" height="695"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                     </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Vfd-gK-P0q">
+                                        <rect key="frame" x="0.0" y="628" width="320" height="46"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="gLM-50-RkA" kind="modal" modalTransitionStyle="crossDissolve" id="FNt-TY-4BN"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </scrollView>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="settings_nav" id="Png-EH-DPn">
@@ -190,6 +200,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="759"/>
                     <connections>
                         <outlet property="imageView" destination="u0z-P5-Uj5" id="DHa-QN-e6F"/>
                         <outlet property="scrollView" destination="SF8-4P-Z66" id="MNm-tP-jC3"/>
@@ -197,7 +209,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qdd-C0-oCQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2841" y="2197"/>
+            <point key="canvasLocation" x="2841" y="2263.5"/>
         </scene>
         <!--Feed View Controller-->
         <scene sceneID="Xyq-nU-utQ">
@@ -212,7 +224,7 @@
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="yZv-qY-EZF">
-                                <rect key="frame" x="0.0" y="63" width="320" height="505"/>
+                                <rect key="frame" x="0.0" y="63" width="320" height="469"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="feed" id="4ye-Ns-Gj3">
@@ -241,6 +253,10 @@
                                     <segue destination="czA-5f-duo" kind="push" id="tQs-4A-Vl3"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="scrubber" id="rc3-At-KYc">
+                                <rect key="frame" x="0.0" y="532" width="320" height="36"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -407,6 +423,7 @@
         <image name="intro" width="320" height="1136"/>
         <image name="login_text" width="320" height="70"/>
         <image name="one_field_form" width="320" height="55"/>
+        <image name="scrubber" width="320" height="36"/>
         <image name="settings" width="320" height="695"/>
         <image name="settings_nav" width="320" height="64"/>
         <image name="sign_in_buttons" width="320" height="104"/>
