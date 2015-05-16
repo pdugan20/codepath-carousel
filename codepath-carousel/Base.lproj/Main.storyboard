@@ -83,7 +83,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.792156862745098" green="0.792156862745098" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardType="emailAddress"/>
                                         <connections>
                                             <action selector="didBeginEditingEmail:" destination="NOr-gl-KIE" eventType="editingDidBegin" id="pab-0C-GrV"/>
                                             <action selector="didEndEditingEmail:" destination="NOr-gl-KIE" eventType="editingDidEnd" id="8al-TW-sq6"/>
@@ -95,7 +95,7 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="textColor" red="0.79215686269999996" green="0.79215686269999996" blue="0.81176470590000005" alpha="1" colorSpace="calibratedRGB"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" spellCheckingType="no"/>
                                         <connections>
                                             <action selector="didBeginEditingPassword:" destination="NOr-gl-KIE" eventType="editingDidBegin" id="8au-0D-V45"/>
                                             <action selector="didEndEditingPassword:" destination="NOr-gl-KIE" eventType="editingDidEnd" id="70z-ZC-u3L"/>
@@ -120,7 +120,6 @@
                                         </state>
                                         <connections>
                                             <action selector="didPressSignIn:" destination="NOr-gl-KIE" eventType="touchUpInside" id="Hci-EP-baN"/>
-                                            <segue destination="AKi-b0-TId" kind="modal" modalTransitionStyle="crossDissolve" id="ayM-CX-sVb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -149,6 +148,7 @@
                         <outlet property="passwordTextField" destination="dN2-ET-oiW" id="4M4-4i-Uor"/>
                         <outlet property="signInButtonView" destination="2fU-An-rYy" id="aUm-RH-CcO"/>
                         <outlet property="signInTextFieldView" destination="vNy-d3-eQU" id="bSc-ut-3RN"/>
+                        <segue destination="AKi-b0-TId" kind="modal" identifier="loginSegue" modalTransitionStyle="crossDissolve" id="NEU-8x-QVu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D55-zS-bsL" userLabel="First Responder" sceneMemberID="firstResponder"/>
