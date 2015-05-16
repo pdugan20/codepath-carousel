@@ -87,7 +87,7 @@ class SignInViewController: UIViewController {
             emailAlert.show()
         } else if passwordTextField.text.isEmpty || passwordTextField.text == "Password" {
             passwordAlert.show()
-        } else if passwordTextField.text != "password" && emailTextField.text != "pat@gmail.com" {
+        } else if passwordTextField.text != "password" || emailTextField.text != "pat@gmail.com" {
             loadingAlert.show()
             delay(2) {
                 loadingAlert.dismissWithClickedButtonIndex(0, animated: true)
