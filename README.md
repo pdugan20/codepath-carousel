@@ -51,7 +51,7 @@ This is a fake Carousel iOS application that simulates signing-in with a dropbox
  * [ ] Optional: Upon completion of the events, mark them green.
  * [ ] Optional: When all events are completed, dismiss the banner.
  
- ### Notes:
+### Notes:
 Initial UIScrollView setup gave me some trouble and I made it work in a somewhat hacky way. 
 
 ### Walkthrough of all user stories:
