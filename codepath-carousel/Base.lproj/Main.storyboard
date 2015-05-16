@@ -12,8 +12,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="XfS-lN-YLs">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" bounces="NO" pagingEnabled="YES" id="XfS-lN-YLs">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="1136"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro" id="pw0-9u-jN9">
@@ -37,6 +37,30 @@
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                         </state>
                                     </button>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile1" id="ghb-77-r1v">
+                                        <rect key="frame" x="47" y="745" width="153" height="152"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile2" id="XcU-tc-Glu">
+                                        <rect key="frame" x="201" y="745" width="76" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile3" id="DgZ-a9-aHH">
+                                        <rect key="frame" x="201" y="822" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile4" id="T6o-zE-Qf8">
+                                        <rect key="frame" x="47" y="899" width="76" height="76"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile5" id="PsR-sy-mi9">
+                                        <rect key="frame" x="124" y="900" width="76" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
+                                    <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="intro_tile6" id="gt2-Tc-mdI">
+                                        <rect key="frame" x="201" y="900" width="76" height="75"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                    </imageView>
                                 </subviews>
                             </scrollView>
                         </subviews>
@@ -46,8 +70,14 @@
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="320" height="1136"/>
                     <connections>
-                        <outlet property="imageView" destination="pw0-9u-jN9" id="GUF-CT-rJv"/>
-                        <outlet property="scrollView" destination="XfS-lN-YLs" id="V11-om-EJy"/>
+                        <outlet property="imageView" destination="pw0-9u-jN9" id="yfa-JX-Vrl"/>
+                        <outlet property="introTileImage1" destination="ghb-77-r1v" id="geN-jF-U3M"/>
+                        <outlet property="introTileImage2" destination="XcU-tc-Glu" id="NZM-wy-hgS"/>
+                        <outlet property="introTileImage3" destination="DgZ-a9-aHH" id="Yis-43-gsu"/>
+                        <outlet property="introTileImage4" destination="T6o-zE-Qf8" id="WMw-DB-jq1"/>
+                        <outlet property="introTileImage5" destination="PsR-sy-mi9" id="hpy-8S-bk9"/>
+                        <outlet property="introTileImage6" destination="gt2-Tc-mdI" id="Ekl-ws-nyp"/>
+                        <outlet property="scrollView" destination="XfS-lN-YLs" id="5nx-fY-3zh"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -421,6 +451,12 @@
         <image name="feed" width="320" height="1564"/>
         <image name="feed_nav" width="320" height="65"/>
         <image name="intro" width="320" height="1136"/>
+        <image name="intro_tile1" width="153" height="152"/>
+        <image name="intro_tile2" width="76" height="75"/>
+        <image name="intro_tile3" width="76" height="76"/>
+        <image name="intro_tile4" width="76" height="76"/>
+        <image name="intro_tile5" width="76" height="75"/>
+        <image name="intro_tile6" width="76" height="75"/>
         <image name="login_text" width="320" height="70"/>
         <image name="one_field_form" width="320" height="55"/>
         <image name="scrubber" width="320" height="36"/>

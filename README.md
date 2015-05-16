@@ -4,12 +4,12 @@
 This is a fake Carousel iOS application that simulates signing-in with a dropbox account, an animated welcome nux-flow, and animated intro screen, logged-in newsfeed, comment section, and settings screen. The application makes use of push and modal segues as well as numerous animations and transitions.
 
 ### Time spent:
-X.X hours spent in total
+7.5 hours spent in total
 
 ### Completed user stories:
 
 **Static photo tiles on the initial screen**
- * [ ] Optional: Photo tiles move with scrolling
+ * [x] Optional: Photo tiles move with scrolling
 
 **Sign In**
  * [x] Tapping on email/password reveals the keyboard and shifts the scrollview and Sign In button up.
@@ -50,4 +50,3 @@ X.X hours spent in total
    * [ ] Share a photo
  * [ ] Optional: Upon completion of the events, mark them green.
  * [ ] Optional: When all events are completed, dismiss the banner.
-
